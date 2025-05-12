@@ -8,3 +8,14 @@
 # 5. Create two simple callbacks (e.g., add_them, multiply_them) and
 #       test perform_operation with both.
 
+def perform_operation(a, b, math_callback):
+    result = math_callback(a, b)
+    print(result)
+
+def add_them(x, y):
+    return x + y
+
+def multiply_them(x, y):
+    return x * y
+
+perform_operation(5, 3, add_them)
